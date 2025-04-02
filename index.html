@@ -3,58 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Country Data Dashboard</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-
-    header {
-      background-color: #004f90;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    iframe {
-      width: 100%;
-      height: 956px;
-      border: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.85rem;
-      color: #666;
-    }
-  </style>
+  <title>Climate Data Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Country Data Dashboard</h1>
-    <p>Explore by year and country</p>
+    <h1>Climate Data Visualizer</h1>
+    <p class="summary">
+      Explore global climate trends from 1961 to 2022 through interactive data visualizations.
+      <br />
+      <span class="data-source">
+        Source:
+        <a href="https://climatedata.imf.org/datasets/4063314923d74187be9596f10d034914/explore" target="_blank" rel="noopener noreferrer">
+          International Monetary Fund
+        </a>
+      </span>
+    </p>
   </header>
 
-  <div class="container">
+  <main class="container">
     <iframe 
       src="https://observablehq.com/embed/78b2f7abdf6cd6f3?cells=viewof+unit%2Cviewof+selectedCountry%2Cviewof+yearFilter%2CzoomControl%2Cchart1%2CbaseChart" 
       allowfullscreen>
     </iframe>
-  </div>
+  </main>
 
   <footer>
-    © 2024 Feny Dai • Dashboard powered by Observable
+    <p>&copy; 2024 Feny Dai, Nila Keri, Vadym Denysenko, Nathan Sidik</p>
+    <p>University of Washington – Autumn 2023</p>
   </footer>
 
 </body>
